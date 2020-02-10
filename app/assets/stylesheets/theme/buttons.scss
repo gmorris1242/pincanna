@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  min-width: 145px;
+  background-color: $light-green;
+  border-color: $light-green;
+  border-radius: 5px;
+  padding: 11px 5px;
+  font-family: $apex-bold;
+  color: $white;
+  width: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: 300ms all;
+
+  &:hover { background-color: lighten($light-green, 5%); }
+  &:active { transform: scale(.95); }
+}

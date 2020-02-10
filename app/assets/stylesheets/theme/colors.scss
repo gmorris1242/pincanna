@@ -1,0 +1,14 @@
+$dark: #545759;
+$green: #546A39;
+$light-green: #74BC20;
+$white: #FFF;
+$black: #000;
+$gray: #F3F3F3;
+
+.dark { color: $dark !important; }
+.green { color: $green !important; }
+.white { color: $white !important; }
+
+.green-bg { background-color: $green !important; }
+.black-bg { background-color: $black !important; }
+.gray-bg { background-color: $gray !important; }

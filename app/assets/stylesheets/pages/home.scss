@@ -1,0 +1,61 @@
+section.top {
+  padding-top: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include respond-to('large') { padding-top: 117px; }
+
+  .left,
+  .right {
+    width: 100%;
+    @include respond-to('large') { width: 50%; }
+  }
+
+  .left {
+    text-align: center;
+    padding: 40px;
+
+    @include respond-to('large') { text-align: right; }
+  }
+
+  .img-wrapper,
+  .heading-1 {
+    max-width: 600px;
+  }
+
+  .heading-1 { padding: 20px 20px 20px 40px; }
+
+  .img-wrapper {
+    max-width: 300px;
+    display: inline-block;
+  }
+}
+
+.triangle {
+  padding: 30px 0;
+
+  @include respond-to('large') { padding: 60px 0; }
+}
+
+.newsletter { padding: 20px 10px 10px; }
+
+.our-brands {
+  .brand-logo {
+    padding: 10px 30px;
+    filter: grayscale(100%);
+  }
+}
+
+.coming-soon {
+  background: image-url('pages/home/michigan.png') center no-repeat;
+  background-size: contain;
+
+  .column:nth-child(1),
+  .column:nth-child(2) {
+    @include respond-to('large') { margin-bottom: 30px; }
+  }
+}
+
+.sepia { filter: sepia(45%); }

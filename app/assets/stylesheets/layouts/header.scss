@@ -1,0 +1,56 @@
+header {
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  background: $white;
+  z-index: 100;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: $white;
+    background: white;
+    z-index: 200;
+    bottom: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: 500ms bottom;
+
+    &.open { bottom: 0; }
+
+    @include respond-to('large') {
+      flex-direction: row;
+      position: static;
+      justify-content: space-between;
+    }
+
+    a {
+      font-family: $apex-reg;
+      font-size: 40px;
+      color: $dark;
+
+      @include respond-to('large') { font-size: 21px; }
+
+      &:hover { font-weight: bold; }
+    }
+  }
+
+  .mobile {
+    img { max-width: 200px; }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before { background-color: $dark; }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#hamburger { z-index: 300; }

@@ -1,0 +1,21 @@
+%header
+  .row
+    .column
+      %ul.nav
+        %li= link_to 'About'
+        %li= link_to 'Loyalty'
+        %li.lg-show= image_tag 'logos/menu_logo.svg'
+        %li= link_to 'Careers'
+        %li= link_to 'News'
+
+    .column.lg-hide.mobile
+      = image_tag 'logos/menu_logo.svg'
+      %button.hamburger.hamburger--collapse#hamburger{:type => "button"}
+        %span.hamburger-box
+          %span.hamburger-inner
+
+:javascript
+  $('#hamburger').click(function() {
+    $(this).toggleClass('is-active');
+    $('.nav').toggleClass('open');
+  })

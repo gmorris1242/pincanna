@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Apex Regular';
+  src: font-url('apex_light.otf')
+}
+
+@font-face {
+  font-family: 'Apex Bold';
+  src: font-url('apex_medium.otf')
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: font-url('metropolis.otf')
+}
+
+$apex-reg: 'Apex Regular';
+$apex-bold: 'Apex bold';
+$metropolis: 'Metropolis';
+
+.apex-reg { font-family: $apex-reg; }
+.apex-bold { font-family: $apex-bold; }
+.metropolis { font-family: $metropolis; }
+
+.heading-1 {
+  font-family: $apex-reg;
+  font-size: 43px;
+
+  @include respond-to('large') { font-size: 60px; }
+}
+
+.heading-2 {
+  font-family: $apex-bold;
+  font-size: 48px;
+}
+
+.heading-3 {
+  font-family: $apex-bold;
+  font-size: 36px;
+}
+
+.heading-4 {
+  font-family: $apex-reg;
+  font-size: 48px;
+}
+
+.sub-heading {
+  font-family: $apex-reg;
+  font-size: 24px;
+}
+
+.paragraph {
+  font-family: $metropolis;
+  font-size: 16px;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.sub-heading,
+.paragraph {
+  color: #333;
+  margin-bottom: 8px;
+}

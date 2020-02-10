@@ -1,0 +1,133 @@
+%section.top
+  .left.green-bg
+    .img-wrapper
+      = image_tag 'logos/picanna_logo_stacked.png'
+  .right
+    %h1.heading-1.dark A RICH MICHIGAN HISTORY, A BRIGHT MICHIGAN FUTURE
+
+.triangle.text-center= image_tag 'pages/home/triangle.svg'
+
+%section
+  .row
+    .column.lg-4
+      = image_tag 'pages/home/farm.jpg', class: 'width-100 sepia'
+      %h2.heading-2 Farm
+      %h3.sub-heading This is where it begins.
+      %p.paragraph
+        Here, at our licensed greenhouses in Pinconning, Michigan, our growers’ exclusive techniques cultivate consistently award-winning cannabis. The science behind growing the best cannabis strains is complex. We just happen to be experts at it.
+    .column.lg-4
+      = image_tag 'pages/home/lab.jpg', class: 'width-100 sepia'
+      %h2.heading-2 Lab
+      %h3.sub-heading We’re all about Harvesting Wellness.
+      %p.paragraph
+        Our state of the art processing facility — the stage between seed and sale — sets the standard for compliant cannabis-infused products. From topicals and tinctures to edibles and concentrates, the Pincanna Lab is recognized for purity and consistency.
+    .column.lg-4
+      = image_tag 'pages/home/market.jpg', class: 'width-100 sepia'
+      %h2.heading-2 Market
+      %h3.sub-heading Products and people you can trust.
+      %p.paragraph
+        Our provisioning centers offer a vast selection of premium cannabis products — along with education and a sense of community — all central to our mission. Our highly-trained patient care consultants will guide you through the healing benefits and varieties of medical marijuana.
+
+%section.text-center.newsletter.black-bg
+  %h3.heading-3.white Subscribe to our newsletter
+  = form_for :newsletter, url: '', remote: true do |f|
+    .row
+      .column.lg-3.text-left.lg-offset-3
+        = f.label 'Name*', class: 'white apex-bold'
+        = f.text_field :name
+      .column.lg-3.text-left
+        = f.label 'Email*', class: 'white apex-bold'
+        = f.text_field :email
+    .btn-wrapper
+      = f.submit 'Subscribe', class: 'btn'
+
+%section.gray-bg.our-brands.text-center
+  %h2.heading-2 Our Brands
+  .row
+    .column
+      = image_tag 'logos/radicle.svg', class: 'brand-logo'
+      = image_tag 'logos/cannarado.svg', class: 'brand-logo'
+      = image_tag 'logos/organic.svg', class: 'brand-logo'
+    .column
+      = image_tag 'logos/fullspectrum.svg', class: 'brand-logo'
+      = image_tag 'logos/funky.svg', class: 'brand-logo'
+      = image_tag 'logos/chemdog.svg', class: 'brand-logo'
+
+%section.about
+  .row.mb-3.vert-center
+    .column.lg-6.text-center
+      = image_tag 'pages/home/photo_1.png'
+    .column.lg-6
+      %h2.heading-3 A WORLD-CLASS TEAM
+      %p.paragraph
+        We’re expert horticulturists, and successful business and legal professionals. We’re advocates and patients ourselves. We’re also spouses and parents. Most importantly, we’re believers … in the healing, restorative powers of medical marijuana. That’s why we’re building a distinctly Michigan-made business and bringing it to you.
+
+  .row.mb-3.vert-center
+    .column.lg-6.lg-push-6.text-center
+      = image_tag 'pages/home/photo_2.png', class: 'width-100'
+    .column.lg-6.lg-pull-6
+      %h2.heading-3 Invested in michigan
+      %p.paragraph
+        From our roots in Southeastern Michigan, our network of licensed provisioning centers across the state is where you’ll find an array of products — some made from our award-winning, Michigan-grown cannabis, produced at our state-of-the-art facility. Also know we’re hiring hundreds of growers, processors and patient care consultants … we’re based here, we’re investing here, we’re growing here.
+
+  .row.mb-3.vert-center
+    .column.lg-6.text-center
+      = image_tag 'pages/home/photo_3.png', class: 'width-100'
+    .column.lg-6
+      %h2.heading-3 A RESEARCHED-BASED APPROACH
+      %p.paragraph
+        Our leadership team has trained our growers, processors and patient care consultants in the science behind medical marijuana and the conditions it treats. We know that this knowledge is important, and will help you make educated decisions about your medical marijuana needs.
+
+  .row
+    .column.lg-4
+      %h2.heading-3 A TRACK RECORD OF EXCELLENCE
+      %p.paragraph
+        We have 45 wins at the cannabis cup. We don’t like to brag. But … it’s simply a fact. We’re regarded by our peers and the scientific community for the excellence of our product.
+    .column.lg-4
+      %h2.heading-3 A FULL-SCALE APPROACH
+      %p.paragraph
+        We’re not simply growers. We do more than process. We aren’t just sellers. Instead, we see the value in growing, process and provisioning … using best practices and doing it all to guarantee the highest quality, medical marijuana you can buy.
+    .column.lg-4
+      %h2.heading-3 A FAMILIAR RANGE OF PRODUCTS
+      %p.paragraph
+        Beyond products crafted at our 135,000 square foot pesticide-free greenhouse and processing center, you’ll find your favorite brands of edibles, topicals, concentrates and flower at the Pincanna Market, which we’ve carefully selected.
+
+%section.text-center.black-bg
+  .row
+    .column.vert-horz-center.flex-wrap
+      %h2.heading-2.white.mb-0 Join our Loyality Program
+      = link_to 'Join', '#', class: 'btn'
+
+%section.coming-soon
+  %h2.heading-3.text-center Coming in 2020
+  .row
+    .column.text-center
+      %h3.heading-4 Kalkaska
+      %h3.heading-4 East Lansing
+      %h3.heading-4 Albion
+      %h3.heading-4 Pinconning
+
+%section.contact.gray-bg
+  .row
+    .column.lg-11.lg-offset-1
+      %h2.heading-3 Contact Us
+
+  .row
+    .column.lg-10.lg-offset-1
+      = form_for :newsletter, url: '', remote: true do |f|
+        .row
+          .column.lg-6
+            = f.label 'Name*', class: 'dark apex-bold'
+            = f.text_field :name, class: 'mb-2'
+          .column.lg-6.text-left
+            = f.label 'Email*', class: 'dark apex-bold'
+            = f.text_field :email, class: 'mb-2'
+          .column
+            = f.label 'Topic*', class: 'dark apex-bold'
+            = f.text_field :topic, class: 'mb-2'
+          .column
+            = f.label 'Message*', class: 'dark apex-bold'
+            = f.text_area :message, class: 'mb-2'
+          .column
+            .btn-wrapper.text-center
+              = f.submit 'Subscribe', class: 'btn'
